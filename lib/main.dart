@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       BlocProvider(create: (_)=>di.sl<AddDeleteUpdateBloc>())
 
     ], child: const MaterialApp(
-      home: QuestionDetailScreen(),
+      home: QuestionScreen(),
     ));
 }
 }
