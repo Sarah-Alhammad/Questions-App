@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:dartz/dartz.dart';
 import 'package:questionsapp/core/error/exception.dart';
-import 'package:questionsapp/features/question/data/models/questionModel.dart';
+import 'package:questionsapp/features/question/data/models/question-model.dart';
 import 'package:http/http.dart';
 
 import '../../../../core/constant.dart';

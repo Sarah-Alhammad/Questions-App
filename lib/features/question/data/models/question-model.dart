@@ -1,10 +1,10 @@
 import 'package:questionsapp/features/question/domain/entities/question.dart';
 
 class QuestionModel extends Question{
-  QuestionModel(super.id, super.questionText, super.answer);
+  QuestionModel({ super.id, required super.questionText, required super.answer});
 
 factory QuestionModel.fromJson(Map<String,dynamic> json){
- return QuestionModel(json["id"], json["questionText"], json["answer"]);
+ return QuestionModel( id :json["id"], questionText: json["questionText"],answer: json["answer"]);
 
 }
 

@@ -1,4 +1,5 @@
-import 'package:dartz/dartz_streaming.dart';
+import 'dart:html';
+import 'package:flutter/src/widgets/text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:questionsapp/features/question/presention/bloc/question_edit/add_delete_update_bloc.dart';
@@ -62,6 +63,11 @@ class _FormWidgetState extends State<FormWidget> {
             decoration: InputDecoration(hintText: "Answer Text"),
           ),
         ),
+        ElevatedButton.icon(onPressed: (){
+          AddOrUpdateOnpressed();
+        }, icon:widget.isUpdate?Icon(Icons.edit):Icon(Icons.add),
+            label: Text(widget.isUpdate?"Update":"Add"))
+
 
       ],
     );

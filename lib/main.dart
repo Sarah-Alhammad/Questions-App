@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:questionsapp/features/question/data/models/questionModel.dart';
+import 'package:questionsapp/features/question/data/models/question-model.dart';
 import 'package:questionsapp/features/question/presention/bloc/question_edit/add_delete_update_bloc.dart';
 import 'package:questionsapp/features/question/presention/bloc/question_get/question_bloc.dart';
 import 'features/question/presention/screen/question_detail_screen.dart';

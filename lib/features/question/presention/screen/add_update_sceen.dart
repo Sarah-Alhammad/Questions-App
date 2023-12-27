@@ -2,15 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:questionsapp/features/question/domain/entities/question.dart';
 import 'package:questionsapp/features/question/presention/bloc/question_edit/add_delete_update_bloc.dart';
-import 'package:questionsapp/features/question/presention/bloc/question_get/question_bloc.dart';
 import 'package:questionsapp/features/question/presention/screen/question_screen.dart';
 import 'package:questionsapp/features/question/presention/widgets/loading_widget.dart';
-import 'package:questionsapp/features/question/presention/widgets/massage_display_widget.dart';
-
 import '../widgets/form_widget.dart';
 class AddUpdateScreen extends StatelessWidget {
-  bool isUpdate;
-  Question ? question;
+ final  bool isUpdate;
+ final Question ? question;
    AddUpdateScreen({Key? key,required this.isUpdate,this.question}) : super(key: key);
 
   @override

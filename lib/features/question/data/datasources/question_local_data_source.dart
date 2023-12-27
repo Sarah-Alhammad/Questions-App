@@ -2,13 +2,13 @@ import 'dart:convert';
 
 import 'package:dartz/dartz.dart';
 import 'package:questionsapp/core/error/exception.dart';
-import 'package:questionsapp/features/question/data/models/questionModel.dart';
+import 'package:questionsapp/features/question/data/models/question-model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 abstract class QuestionLocalDataSource {
   Future<List<QuestionModel>> getCashQuestion();
 
-  Future<Unit> cachQuestion(List<QuestionModel> questionModels);
+  Future<Unit> cacheQuestion(List<QuestionModel> questionModels);
 }
 
 class QuestionLocalDataSourceImp extends QuestionLocalDataSource {
@@ -17,7 +17,7 @@ class QuestionLocalDataSourceImp extends QuestionLocalDataSource {
   QuestionLocalDataSourceImp(this.sharedPreferences);
 
   @override
-  Future<Unit> cachQuestion(List<QuestionModel> questionModels) {
+  Future<Unit> cacheQuestion(List<QuestionModel> questionModels) {
     List questionModelToJson = questionModels
         .map<Map<String, dynamic>>((question) => question.toJson())
         .toList();

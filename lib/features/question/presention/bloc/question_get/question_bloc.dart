@@ -4,15 +4,15 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 import 'package:questionsapp/features/question/domain/entities/question.dart';
-import 'package:questionsapp/features/question/domain/usecases/get_all_question.dart';
 import 'package:flutter/cupertino.dart';
 
 import '../../../../../core/error/failure.dart';
+import '../../../domain/usecases/add_delete_update_get_usecases_question.dart';
 part 'question_event.dart';
 part 'question_state.dart';
 
 class QuestionBloc extends Bloc<QuestionEvent, QuestionState> {
-GetAllQuestionUseCase getAllQuestionUseCase;
+final GetAllQuestionUseCase getAllQuestionUseCase;
 
   QuestionBloc(this.getAllQuestionUseCase) : super(QuestionInitial()) {
     on<QuestionEvent>((event, emit) async

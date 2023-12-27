@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:questionsapp/features/question/presention/bloc/question_get/question_bloc.dart';
-import 'package:questionsapp/features/question/presention/screen/AddUpdateScreen.dart';
+import 'package:questionsapp/features/question/presention/screen/add_update_sceen.dart';
 
 import '../widgets/loading_widget.dart';
 import '../widgets/massage_display_widget.dart';

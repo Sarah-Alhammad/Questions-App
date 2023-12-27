@@ -1,14 +1,10 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 import 'package:questionsapp/features/question/domain/entities/question.dart';
-import 'package:questionsapp/features/question/domain/usecases/add_question.dart';
-import 'package:questionsapp/features/question/domain/usecases/delete_question.dart';
-import 'package:questionsapp/features/question/domain/usecases/update_question.dart';
-
+import 'package:questionsapp/features/question/domain/usecases/add_delete_update_get_usecases_question.dart';
 import '../../../../../core/error/failure.dart';
 
 part 'add_delete_update_event.dart';

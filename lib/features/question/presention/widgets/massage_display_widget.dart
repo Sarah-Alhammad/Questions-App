@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 class MassageDisplayWidget extends StatelessWidget {
-  String massage;
+  final String massage;
    MassageDisplayWidget({Key? key ,required this.massage}) : super(key: key);
 
   @override

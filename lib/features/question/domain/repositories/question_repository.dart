@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:questionsapp/features/question/data/models/questionModel.dart';
+import 'package:questionsapp/features/question/data/models/question-model.dart';
 
 import '../../../../core/error/failure.dart';
 import '../entities/question.dart';
